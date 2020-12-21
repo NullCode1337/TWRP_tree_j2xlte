@@ -90,4 +90,10 @@ TW_EXCLUDE_TWRPAPP      := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp"
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX     := true
+
 RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_INCLUDE_CRYPTO       := true
+TW_NO_EXFAT_FUSE        := true
+TW_NEW_ION_HEAP      := true
+BOARD_RECOVERY_SWIPE := true
