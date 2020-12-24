@@ -59,7 +59,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 
 # TWRP Configuration
-TW_THEME := portrait_hdpi
+TW_THEME          := portrait_hdpi
+TW_DEVICE_VERSION := 1_nullcode
+TW_MTP_DEVICE     := "/dev/mtp_usb"
 
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TARGET_SCREEN_WIDTH   := 720
