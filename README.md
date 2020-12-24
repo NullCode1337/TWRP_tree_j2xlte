@@ -2,7 +2,7 @@
 This device configuration is all you need to compile TWRP for yourself! Please credit me (@NullCode on XDA) and all the appropriate people if you use it in one of your builds. 
 
 ## Bugs
-This is still in the testing phase, use at your own risk
+None so far :)
 
 ## Instructions
 To use this tree for compiling TWRP, do the following: 
@@ -30,7 +30,7 @@ cd ~/TWRP
 3: repo sync the TWRP-6.0 sources:
 ```bash
 repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-6.0
-repo sync --no-clone-bundle
+repo sync --current-branch --no-clone-bundle --force-sync
 ```
 4: Once done open the folder where you synced the sources
 ```bash
@@ -51,7 +51,6 @@ git clone https://github.com/Ishaq06/TWRP_tree_j2xlte.git j2xlte/
 cd ~/TWRP
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
-export LC_ALL="C"
 lunch omni_j2xlte-eng
 mka recoveryimage
 ```
