@@ -2,7 +2,7 @@
 This device configuration is all you need to compile TWRP for yourself! Please credit me (@NullCode on XDA) and all the appropriate people if you use it in one of your builds. 
 
 ## Bugs
-None so far :)
+MTP still not working 
 
 ## Instructions
 To use this tree for compiling TWRP, do the following: 
