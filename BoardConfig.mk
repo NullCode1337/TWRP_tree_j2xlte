@@ -1,3 +1,4 @@
+# Tested and fully working
 USE_CAMERA_STUB := true
 
 DEVICE_PATH         := device/samsung/j2xlte

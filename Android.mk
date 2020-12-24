@@ -1,3 +1,5 @@
+# Tested and fully working
+
 ifneq ($(filter j2xlte,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
