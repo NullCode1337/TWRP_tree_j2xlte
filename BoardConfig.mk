@@ -1,20 +1,16 @@
-USE_CAMERA_STUB := true
-
 DEVICE_PATH         := device/samsung/j2xlte
 BOARD_USE_EMMC      := true
+
 TARGET_BOOTLOADER_BOARD_NAME := j2xlte
 TARGET_NO_BOOTLOADER         := true
-
-# For building with minimal manifest
-ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
 TARGET_ARCH         := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI      := armeabi-v7a
-TARGET_CPU_ABI2    := armeabi
-TARGET_CPU_VARIANT := cortex-a7
-TARGET_CPU_SMP     := true
+TARGET_CPU_ABI2     := armeabi
+TARGET_CPU_VARIANT  := cortex-a7
+TARGET_CPU_SMP      := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # Kernel
@@ -49,17 +45,8 @@ BOARD_NO_CHARGER_LED := true
 TARGET_BOARD_PLATFORM     := sc8830
 TARGET_BOARD_PLATFORM_GPU := mali-400mp
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH  := 720
-TARGET_BOOTANIMATION_PRELOAD       := true
-TARGET_BOOTANIMATION_TEXTURE_CACHE := true
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := j2xlte,j2xltedd
-
-# Keys
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../$(PLATFORM_PATH)/recovery/recovery_keys.c
 BOARD_HAS_NO_SELECT_BUTTON       := true
 
 # File systems
@@ -68,13 +55,11 @@ BOARD_SYSTEMIMAGE_PARTITION_TYPE     := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 
 BOARD_SUPPRESS_SECURE_ERASE := true
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-DEVICE_RESOLUTION  := 720x1280
 
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TARGET_SCREEN_WIDTH   := 720
@@ -84,17 +69,17 @@ TW_DEFAULT_BRIGHTNESS := 162
 TW_MAX_BRIGHTNESS     := 255
 TW_BRIGHTNESS_PATH    := "/sys/class/backlight/panel/brightness"
 
+RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
+TW_NEW_ION_HEAP         := true
+
+TW_NO_EXFAT_FUSE        := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE    := true
 
-#TW_SCREEN_BLANK_ON_BOOT := true
 TW_EXCLUDE_TWRPAPP      := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp"
-TW_USE_TOOLBOX     := true
+TW_USE_TOOLBOX          := true
 
-RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO       := true
-TW_NO_EXFAT_FUSE        := true
-TW_NEW_ION_HEAP      := true
-BOARD_RECOVERY_SWIPE := true
+BOARD_RECOVERY_SWIPE    := true
