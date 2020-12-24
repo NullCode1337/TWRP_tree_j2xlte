@@ -1,5 +1,3 @@
-#Fully working
-
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, build/target/product/embedded.mk)
 
