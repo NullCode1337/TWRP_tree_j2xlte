@@ -1,5 +1,5 @@
 # TWRP For the Galaxy J2 2016
-This device configuration is all you need to compile TWRP for yourself! Please credit me (@NullCode on XDA) and all the appropriate people if you use it in one of your builds. 
+Device Configuration for compiling TWRP by yourself. Please credit me (@NullCode on XDA) and all the appropriate people if you use it in one of your builds. 
 
 ## Bugs
 MTP still not working 
@@ -66,7 +66,7 @@ Please make sure to update tests as appropriate.
 ME (For obvious reasons)
 
 
-djeman on Github (because I stole some of his j3xnlte BoardConfig props)
+Aditya KR on Github (because I sto- took some BoardConfig props)
 
 
-And of course, Team Win Recovery Project Team for building this amazing project.
+And of course, Team Win Recovery Project Team for creating this amazing project.
