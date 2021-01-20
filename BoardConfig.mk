@@ -60,7 +60,7 @@ BOARD_SUPPRESS_SECURE_ERASE          := true
 
 # TWRP Configuration
 TW_THEME          := portrait_hdpi
-TW_DEVICE_VERSION := 1_nullcode
+TW_DEVICE_VERSION := 0_nullcode
 TW_MTP_DEVICE     := "/dev/mtp_usb"
 
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
