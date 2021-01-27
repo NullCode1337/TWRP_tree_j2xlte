@@ -3,6 +3,7 @@ Device Configuration for compiling TWRP by yourself. Please credit me (@NullCode
 
 ## Bugs
 MTP still not working 
+USB Storage not working 
 
 ## Instructions
 To use this tree for compiling TWRP, do the following: 
