@@ -3,6 +3,8 @@ Device Configuration for compiling TWRP by yourself. Please credit me (@NullCode
 
 
 Note: This device tree now has official builds due to the kindness of BigBiff (he helped me out a lot with Gerrit). Thank you!
+
+
 These builds can be found here: https://twrp.me/samsung/samsunggalaxyj22016.html
 
 ## Bugs
@@ -63,9 +65,7 @@ mka recoveryimage
 Depending on what you did, this build will either succeed, or fail. If it succeeded, you will see the TWRP image in the "out" folder. But if it didn't, follow the steps above properly again.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+If anyone ever manages to fix the MTP bug by either filing an issue or submitting a pull request, I will be forever grateful.
 
 ## Stars of the show
 ME (For obvious reasons)
