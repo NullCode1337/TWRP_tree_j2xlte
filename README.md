@@ -1,6 +1,10 @@
 # TWRP For the Galaxy J2 2016
 Device Configuration for compiling TWRP by yourself. Please credit me (@NullCode on XDA) and all the appropriate people if you use it in one of your builds. 
 
+
+Note: This device tree now has official builds due to the kindness of BigBiff (he helped me out a lot with Gerrit). Thank you!
+These builds can be found here: https://twrp.me/samsung/samsunggalaxyj22016.html
+
 ## Bugs
 MTP still not working 
 USB Storage not working 
