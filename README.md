@@ -20,7 +20,6 @@ Note: This device tree now has official builds due to the kindness of BigBiff (h
 These builds can be found here: https://twrp.me/samsung/samsunggalaxyj22016.html
 
 ## Bugs
-MTP still not working 
 USB Storage not working 
 
 ## Instructions
