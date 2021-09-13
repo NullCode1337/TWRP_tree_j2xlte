@@ -11,6 +11,7 @@ TARGET_CPU_ABI      := armeabi-v7a
 TARGET_CPU_ABI2     := armeabi
 TARGET_CPU_VARIANT  := cortex-a7
 TARGET_CPU_SMP      := true
+ARCH_ARM_HAVE_NEON  := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # Kernel
@@ -43,11 +44,14 @@ BOARD_NO_CHARGER_LED             := true
 # Platform
 TARGET_BOARD_PLATFORM     := sc8830
 TARGET_BOARD_PLATFORM_GPU := mali-400mp
+TARGET_GLOBAL_CFLAGS += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+TARGET_BUILD_VARIANT=user
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE        := j2xlte,j2xltedd
 BOARD_HAS_NO_SELECT_BUTTON      := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/20200000.usb/gadget/lun%d/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/20200000.usb/gadget/lun0/file"
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM           := true
@@ -61,7 +65,7 @@ BOARD_SUPPRESS_SECURE_ERASE          := true
 # TWRP Configuration
 TW_THEME          := portrait_hdpi
 TW_DEVICE_VERSION := 0_nullcode
-TW_MTP_DEVICE     := "/dev/mtp_usb"
+TW_MTP_DEVICE     := /dev/usb_mtp_gadget
 
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TARGET_SCREEN_WIDTH   := 720
@@ -76,12 +80,15 @@ TW_NEW_ION_HEAP         := true
 
 TW_NO_EXFAT_FUSE        := true
 TW_NO_REBOOT_BOOTLOADER := true
+TW_NO_SCREEN_BLANK      := true
 TW_HAS_DOWNLOAD_MODE    := true
 
 TW_EXCLUDE_TWRPAPP      := true
+TW_EXCLUDE_SUPERSU      := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp"
 TW_USE_TOOLBOX          := true
 
 RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO       := true
 BOARD_RECOVERY_SWIPE    := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
