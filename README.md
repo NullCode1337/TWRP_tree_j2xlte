@@ -57,6 +57,7 @@ git clone https://github.com/NullCode1337/TWRP_tree_j2xlte.git j2xlte/
 cd ~/TWRP
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
+export LC_ALL=C
 lunch omni_j2xlte-eng
 mka recoveryimage
 ```
