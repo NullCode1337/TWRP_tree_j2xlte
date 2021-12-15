@@ -1,15 +1,3 @@
-# I am abandoning this
-I will not be working on this device tree anymore.
-
-It has been a fun journey, but I have decided to abandon some of my old projects and embrace new ones
-
-This is one of my oldest projects (which I have been working on from the age of 12)
-
-If there are any critical flaws, I will definitely (try to) fix them
-
-From here starts the original README 
-
-------
 ## TWRP For the Galaxy J2 2016
 Device Configuration for compiling TWRP by yourself. Please credit me (@NullCode on XDA) and all the appropriate people if you use it in one of your builds. 
 
