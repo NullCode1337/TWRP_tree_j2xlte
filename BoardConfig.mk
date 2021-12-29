@@ -44,8 +44,9 @@ BOARD_NO_CHARGER_LED             := true
 # Platform
 TARGET_BOARD_PLATFORM     := sc8830
 TARGET_BOARD_PLATFORM_GPU := mali-400mp
-#TARGET_GLOBAL_CFLAGS      += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
-#TARGET_GLOBAL_CPPFLAGS    += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CFLAGS += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+TARGET_BUILD_VARIANT=user
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE        := j2xlte,j2xltedd
@@ -74,8 +75,8 @@ TW_DEFAULT_BRIGHTNESS := 162
 TW_MAX_BRIGHTNESS     := 255
 TW_BRIGHTNESS_PATH    := "/sys/class/backlight/panel/brightness"
 
-RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER  := true
-RECOVERY_GRAPHICS_FORCE_USE_LINELENGTH := true
+RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
+TW_NEW_ION_HEAP         := true
 
 TW_NO_EXFAT_FUSE        := true
 TW_NO_REBOOT_BOOTLOADER := true
@@ -85,11 +86,12 @@ TW_HAS_DOWNLOAD_MODE    := true
 TW_EXCLUDE_TWRPAPP      := true
 TW_EXCLUDE_SUPERSU      := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp"
-TW_FORCE_USE_BUSYBOX := true
+TW_USE_TOOLBOX          := true
 
 RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO       := true
 BOARD_RECOVERY_SWIPE    := true
+
 BOARD_HAS_NO_MISC_PARTITION := true
 TARGET_RECOVERY_FSTAB = device/samsung/j2xlte/recovery.fstab
 TW_EXCLUDE_DEFAULT_USB_INIT := true

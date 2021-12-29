@@ -1,15 +1,13 @@
 $(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, build/target/product/embedded.mk)
 
+$(call inherit-product, build/target/product/full_base_telephony.mk)
 $(call inherit-product, build/target/product/languages_small.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_COPY_FILES += \
     device/samsung/j2xlte/prebuilt/zImage:kernel \
-   
-PRODUCT_PACKAGES += \
-	    	charger_res_images \
-	    	charger
-
+    device/samsung/j2xlte/recovery.fstab:recovery/root/etc/recovery.fstab 
+    
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := j2xlte
 PRODUCT_NAME := omni_j2xlte
