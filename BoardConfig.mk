@@ -94,4 +94,4 @@ BOARD_RECOVERY_SWIPE    := true
 
 BOARD_HAS_NO_MISC_PARTITION := true
 TARGET_RECOVERY_FSTAB = device/samsung/j2xlte/recovery.fstab
-#TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
