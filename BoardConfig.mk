@@ -77,7 +77,9 @@ TW_BRIGHTNESS_PATH    := "/sys/class/backlight/panel/brightness"
 
 RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
 RECOVERY_GRAPHICS_USE_LINELENGTH      := true
+
 TW_NEW_ION_HEAP         := true
+TW_EXCLUDE_MTP          := false
 
 TW_NO_EXFAT_FUSE        := true
 TW_NO_REBOOT_BOOTLOADER := true
