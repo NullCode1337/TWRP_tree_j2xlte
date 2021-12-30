@@ -51,7 +51,7 @@ TARGET_BUILD_VARIANT=user
 # Assert
 TARGET_OTA_ASSERT_DEVICE        := j2xlte,j2xltedd
 BOARD_HAS_NO_SELECT_BUTTON      := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/20200000.usb/gadget/lun%d/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/20200000.usb/gadget/lun0/file"
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM           := true
