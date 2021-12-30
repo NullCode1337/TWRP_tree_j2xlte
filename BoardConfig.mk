@@ -1,5 +1,6 @@
 DEVICE_PATH         := device/samsung/j2xlte
 BOARD_USE_EMMC      := true
+BOARD_VENDOR        := samsung
 
 BOARD_USES_SPRD_HARDWARE     := true
 TARGET_BOOTLOADER_BOARD_NAME := j2xlte
@@ -45,9 +46,8 @@ BOARD_NO_CHARGER_LED             := true
 # Platform
 TARGET_BOARD_PLATFORM     := sc8830
 TARGET_BOARD_PLATFORM_GPU := mali-400mp
-TARGET_GLOBAL_CFLAGS += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
-TARGET_BUILD_VARIANT=user
+TARGET_GLOBAL_CFLAGS      += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS    += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE        := j2xlte,j2xltedd
@@ -60,7 +60,6 @@ BOARD_SYSTEMIMAGE_PARTITION_TYPE     := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4           := true
 TARGET_USERIMAGES_USE_F2FS           := true
-
 BOARD_SUPPRESS_SECURE_ERASE          := true
 
 # TWRP Configuration
@@ -77,6 +76,7 @@ TW_MAX_BRIGHTNESS     := 255
 TW_BRIGHTNESS_PATH    := "/sys/class/backlight/panel/brightness"
 
 RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
+RECOVERY_GRAPHICS_USE_LINELENGTH      := true
 TW_NEW_ION_HEAP         := true
 
 TW_NO_EXFAT_FUSE        := true
