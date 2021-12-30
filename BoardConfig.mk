@@ -89,8 +89,8 @@ TW_HAS_DOWNLOAD_MODE    := true
 TW_EXCLUDE_TWRPAPP      := true
 TW_EXCLUDE_SUPERSU      := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp"
-TW_USE_TOOLBOX          := true
-
+#TW_USE_TOOLBOX          := true
+TW_FORCE_USE_BUSYBOX     := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO       := true
 BOARD_RECOVERY_SWIPE    := true
