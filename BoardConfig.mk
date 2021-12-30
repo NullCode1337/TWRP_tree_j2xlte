@@ -1,6 +1,7 @@
 DEVICE_PATH         := device/samsung/j2xlte
 BOARD_USE_EMMC      := true
 
+BOARD_USES_SPRD_HARDWARE     := true
 TARGET_BOOTLOADER_BOARD_NAME := j2xlte
 TARGET_NO_BOOTLOADER         := true
 
