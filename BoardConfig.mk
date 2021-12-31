@@ -3,7 +3,7 @@ BOARD_USE_EMMC      := true
 BOARD_VENDOR        := samsung
 
 BOARD_USES_SPRD_HARDWARE     := true
-TARGET_BOOTLOADER_BOARD_NAME := j2xlte
+TARGET_BOOTLOADER_BOARD_NAME := SC9830I
 TARGET_NO_BOOTLOADER         := true
 
 # Architecture
