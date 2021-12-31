@@ -5,7 +5,7 @@ $(call inherit-product, build/target/product/full_base_telephony.mk)
 $(call inherit-product, build/target/product/languages_small.mk)
 
 PRODUCT_COPY_FILES += \
-    device/samsung/j2xlte/prebuilt/kernel:kernel \
+    device/samsung/j2xlte/prebuilt/zImage:kernel \
     device/samsung/j2xlte/recovery.fstab:recovery/root/etc/recovery.fstab 
     
 # Device identifier. This must come after all inclusions
