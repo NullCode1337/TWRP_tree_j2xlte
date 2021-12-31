@@ -1,0 +1,14 @@
+#
+# system.prop for J210F
+#
+
+ro.product.model=SM-J210f
+ro.product.brand=samsung
+ro.product.name=j2xltedd
+ro.product.device=j2xlte
+ro.product.board=SC9830I
+ro.chipname=SC9830I
+ro.lcd_min_brightness=0
+ro.lcd_brightness=162
+ro.sf.lcd_density=320
+persist.sys.usb.config=mtp,adb
