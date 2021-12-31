@@ -65,7 +65,7 @@ BOARD_SUPPRESS_SECURE_ERASE          := true
 # TWRP Configuration
 TW_THEME          := portrait_hdpi
 TW_DEVICE_VERSION := 0_nullcode
-TW_MTP_DEVICE     := /dev/mtp_usb
+TW_MTP_DEVICE     := /dev/usb_mtp_gadget
 
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TARGET_SCREEN_WIDTH   := 720
@@ -89,12 +89,12 @@ TW_HAS_DOWNLOAD_MODE    := true
 TW_EXCLUDE_TWRPAPP      := true
 TW_EXCLUDE_SUPERSU      := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp"
-#TW_USE_TOOLBOX          := true
+
 TW_FORCE_USE_BUSYBOX     := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO       := true
 BOARD_RECOVERY_SWIPE    := true
 
 BOARD_HAS_NO_MISC_PARTITION := true
-TARGET_RECOVERY_FSTAB = device/samsung/j2xlte/recovery.fstab
+TARGET_RECOVERY_FSTAB       := device/samsung/j2xlte/recovery.fstab
 TW_EXCLUDE_DEFAULT_USB_INIT := true
