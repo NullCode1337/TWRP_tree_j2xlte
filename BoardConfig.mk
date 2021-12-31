@@ -30,9 +30,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 TARGET_KERNEL_ARCH        := arm
 TARGET_KERNEL_HEADER_ARCH := arm
-BOARD_KERNEL_IMAGE_NAME   := zImage
+BOARD_KERNEL_IMAGE_NAME   := kernel
 
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 TARGET_PREBUILT_DTB    := $(DEVICE_PATH)/prebuilt/dt.img
 
 BOARD_MKBOOTIMG_ARGS    := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --cmdline "console=ttyS1,115200n8" --dt $(TARGET_PREBUILT_DTB)
@@ -76,10 +76,7 @@ TW_MAX_BRIGHTNESS     := 255
 TW_BRIGHTNESS_PATH    := "/sys/class/backlight/panel/brightness"
 
 RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
-RECOVERY_GRAPHICS_USE_LINELENGTH      := true
-
-TW_NEW_ION_HEAP         := true
-TW_EXCLUDE_MTP          := false
+TW_NEW_ION_HEAP                       := true
 
 TW_NO_EXFAT_FUSE        := true
 TW_NO_REBOOT_BOOTLOADER := true
