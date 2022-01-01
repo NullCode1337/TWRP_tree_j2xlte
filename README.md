@@ -9,8 +9,6 @@ These builds can be found here: https://twrp.me/samsung/samsunggalaxyj22016.html
 
 ## Bugs
 - USB Storage not working (won't be fixed sad)
-- MTP not working
-- ADB Shell not working
 
 ## Instructions
 To use this tree for compiling TWRP, do the following: 
