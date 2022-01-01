@@ -2,13 +2,11 @@
 Device Configuration for compiling TWRP by yourself. Please credit me (@NullCode on XDA) and all the appropriate people if you use it in one of your builds. 
 
 
-Note: This device tree now has official builds due to the kindness of BigBiff (he helped me out a lot with Gerrit). Thank you!
+Note: This device tree now has official builds here: https://twrp.me/samsung/samsunggalaxyj22016.html
 
-
-These builds can be found here: https://twrp.me/samsung/samsunggalaxyj22016.html
 
 ## Bugs
-- USB Storage not working (won't be fixed sad)
+- USB Storage not working (working on ittttt)
 
 ## Instructions
 To use this tree for compiling TWRP, do the following: 
