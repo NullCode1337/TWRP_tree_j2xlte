@@ -6,7 +6,7 @@ Note: This device tree now has official builds here: https://twrp.me/samsung/sam
 
 
 ## Bugs
-- USB Storage not working (working on ittttt)
+- Enabling USB Storage enables MTP, for some reason
 
 ## Instructions
 To use this tree for compiling TWRP, do the following: 
