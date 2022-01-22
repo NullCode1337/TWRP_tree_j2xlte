@@ -6,7 +6,7 @@ Note: This device tree now has official builds here: https://twrp.me/samsung/sam
 
 
 ## Bugs
-- Enabling USB Storage enables MTP, for some reason
+- USB Storage DNW
 
 ## Instructions
 To use this tree for compiling TWRP, do the following: 
@@ -70,8 +70,4 @@ If anyone ever manages to fix the MTP bug by either filing an issue or submittin
 ## Stars of the show
 ME (For obvious reasons)
 
-
 Aditya KR on Github (because I sto- took some BoardConfig props)
-
-
-And of course, TeamWin Recovery Project Team for the recovery itself.
