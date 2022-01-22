@@ -64,9 +64,6 @@ One line: `cd ~/TWRP && . build/envsetup.sh && export ALLOW_MISSING_DEPENDENCIES
 
 Depending on what you did, this build will either succeed, or fail. If it succeeded, you will see the TWRP image in the "out" folder. But if it didn't, follow the steps above properly again.
 
-## Contributing
-If anyone ever manages to fix the MTP bug by either filing an issue or submitting a pull request, I will be forever grateful.
-
 ## Stars of the show
 ME (For obvious reasons)
 
